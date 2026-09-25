@@ -2,54 +2,75 @@
 <html lang="en">
 
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Vignesh - Art Gallery">
-        <title>Vignesh | Full Gallery</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="VigneshArts - Art Gallery">
+    <meta name="theme-color" content="#0c0b09">
+    <title>VigneshArts | Full Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-        <header>
-                <div class="logo">VIGNESH</div>
-                <nav>
-                        <a href="index.html#portfolio">Art's</a>
-                        <a href="gallery.html" class="active-nav">Gallery</a>
-                        <a href="index.html#about">About</a>
-                </nav>
-        </header>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="pencil" viewBox="0 0 200 24">
+            <path d="M28 4h140v16H28z" fill="#c8a76a"/>
+            <path d="M28 4h140v5H28z" fill="#dfc48f"/>
+            <path d="M28 15h140v5H28z" fill="#a5854c"/>
+            <path d="M168 4h14v16h-14z" fill="#a19d96"/>
+            <path d="M172 4v16M177 4v16" stroke="#77736d" stroke-width="1.2"/>
+            <path d="M182 4h10a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4h-10z" fill="#c9837a"/>
+            <path d="M28 4 4 12l24 8z" fill="#e6cfa6"/>
+            <path d="M11 9.7 4 12l7 2.3z" fill="#2a2724"/>
+        </symbol>
+    </svg>
+    <div class="progress" aria-hidden="true"></div>
+    <header class="site-header">
+        <a href="index.html" class="logo">Vignesh<em>Arts</em></a>
+        <nav>
+            <a href="index.html#portfolio">Art's</a>
+            <a href="gallery.html" class="active-nav">Gallery</a>
+            <a href="index.html#about">About</a>
+        </nav>
+    </header>
 
-        <main class="gallery-page">
-                <h1 class="gallery-title fade-in">Full Gallery</h1>
-                <div class="gallery-grid">
-                        <div class="gallery-item fade-in" style="transition-delay: 0.1s"><img
-                                        src="assets/mr_un_vi_14041226_170726831.jpg.jpeg" alt="Artwork 1"></div>
-                        <div class="gallery-item fade-in" style="transition-delay: 0.2s"><img
-                                        src="assets/mr_un_vi_14041226_170733646.jpg.jpeg" alt="Artwork 2"></div>
-                        <div class="gallery-item fade-in" style="transition-delay: 0.3s"><img
-                                        src="assets/mr_un_vi_14041226_170751697.jpg.jpeg" alt="Artwork 3"></div>
-                        <div class="gallery-item fade-in" style="transition-delay: 0.4s"><img
-                                        src="assets/mr_un_vi_14041226_170822749.jpg.jpeg" alt="Artwork 4"></div>
-                        <div class="gallery-item fade-in" style="transition-delay: 0.5s"><img
-                                        src="assets/mr_un_vi_14041226_170829774.jpg.jpeg" alt="Artwork 5"></div>
-                        <div class="gallery-item fade-in" style="transition-delay: 0.6s"><img
-                                        src="assets/mr_un_vi_14041226_183901251.jpg.jpeg" alt="Artwork 6"></div>
-                        <div class="gallery-item fade-in" style="transition-delay: 0.6s"><img
-                                        src="assets/IMG-20260316-WA0030.jpg.jpeg" alt="Artwork 7"></div>
-                        <div class="gallery-item fade-in" style="transition-delay: 0.6s"><img
-                                        src="assets/IMG-20260316-WA0032.jpg.jpeg" alt="Artwork 8"></div>
-                        <div class="gallery-item fade-in" style="transition-delay: 0.6s"><img
-                                        src="assets/IMG_20260316_190132.jpg.jpeg" alt="Artwork 9"></div>
+    <main class="gallery-page">
+        <svg class="pencil" viewBox="0 0 200 24" style="--top:7%;--left:72%;--rot:-20deg;--w:220px;--dur:6.5s;--delay:0s" data-speed="0.2" aria-hidden="true"><use href="#pencil"/></svg>
+        <svg class="pencil" viewBox="0 0 200 24" style="--top:13%;--left:88%;--rot:150deg;--w:150px;--dur:5.5s;--delay:-2s" data-speed="0.3" aria-hidden="true"><use href="#pencil"/></svg>
+        <div class="g-head">
+            <p class="label" data-scrub="slide-l">Gallery</p>
+            <h1 class="g-title" data-scrub="letters">Full <em>Gallery</em></h1>
+        </div>
+        <div class="g-grid">
+            <figure class="g-item tile"><img src="assets/mr_un_vi_14041226_170726831.jpg.jpeg" alt="Artwork 1" width="1080" height="1350" data-lb></figure>
+            <figure class="g-item tile"><img src="assets/mr_un_vi_14041226_170733646.jpg.jpeg" alt="Artwork 2" width="1080" height="1018" data-lb></figure>
+            <figure class="g-item tile"><img src="assets/mr_un_vi_14041226_170751697.jpg.jpeg" alt="Artwork 3" width="1080" height="1306" data-lb></figure>
+            <figure class="g-item tile"><img src="assets/mr_un_vi_14041226_170822749.jpg.jpeg" alt="Artwork 4" width="1080" height="1350" data-lb></figure>
+            <figure class="g-item tile"><img src="assets/mr_un_vi_14041226_170829774.jpg.jpeg" alt="Artwork 5" width="1080" height="1350" data-lb loading="lazy"></figure>
+            <figure class="g-item tile"><img src="assets/mr_un_vi_14041226_183901251.jpg.jpeg" alt="Artwork 6" width="1080" height="1350" data-lb loading="lazy"></figure>
+            <figure class="g-item tile"><img src="assets/IMG-20260316-WA0030.jpg.jpeg" alt="Artwork 7" width="1091" height="1280" data-lb loading="lazy"></figure>
+            <figure class="g-item tile"><img src="assets/IMG-20260316-WA0032.jpg.jpeg" alt="Artwork 8" width="1200" height="1394" data-lb loading="lazy"></figure>
+            <figure class="g-item tile"><img src="assets/IMG_20260316_190132-web.jpg" alt="Artwork 9" width="1800" height="2400" data-lb loading="lazy"></figure>
+            <figure class="g-item tile"><img src="assets/new-1.jpg" alt="Artwork 10" width="1800" height="2400" data-lb loading="lazy"></figure>
+            <figure class="g-item tile"><img src="assets/new-2.jpg" alt="Artwork 11" width="1800" height="2400" data-lb loading="lazy"></figure>
+            <figure class="g-item tile"><img src="assets/new-3.jpg" alt="Artwork 12" width="1800" height="2400" data-lb loading="lazy"></figure>
+            <figure class="g-item tile"><img src="assets/new-4.jpg" alt="Artwork 13" width="2400" height="1800" data-lb loading="lazy"></figure>
+            <figure class="g-item tile"><img src="assets/new-5.jpg" alt="Artwork 14" width="1800" height="2400" data-lb loading="lazy"></figure>
+            <figure class="g-item tile"><img src="assets/new-6.jpg" alt="Artwork 15" width="1800" height="2400" data-lb loading="lazy"></figure>
+            <figure class="g-item tile"><img src="assets/new-7.jpg" alt="Artwork 16" width="1800" height="2400" data-lb loading="lazy"></figure>
+            <figure class="g-item tile"><img src="assets/new-8.jpg" alt="Artwork 17" width="1800" height="2400" data-lb loading="lazy"></figure>
+            <figure class="g-item tile"><img src="assets/new-9.jpg" alt="Artwork 18" width="1800" height="2400" data-lb loading="lazy"></figure>
+            <figure class="g-item tile"><img src="assets/new-10.jpg" alt="Artwork 19" width="1800" height="2400" data-lb loading="lazy"></figure>
+        </div>
+    </main>
 
-                </div>
-        </main>
+    <footer>
+        <p>&copy; 2026 VigneshArts. All rights reserved.</p>
+    </footer>
 
-        <footer>
-                <p>&copy; 2026 Vignesh. All rights reserved.</p>
-        </footer>
-
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

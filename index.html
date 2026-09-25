@@ -3,16 +3,32 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vignesh - Modern Art Portfolio Website">
-    <title>Vignesh | Art Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="VigneshArts - Modern Art Portfolio Website">
+    <meta name="theme-color" content="#0c0b09">
+    <title>VigneshArts | Art Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="logo">VIGNESH</div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="pencil" viewBox="0 0 200 24">
+            <path d="M28 4h140v16H28z" fill="#c8a76a"/>
+            <path d="M28 4h140v5H28z" fill="#dfc48f"/>
+            <path d="M28 15h140v5H28z" fill="#a5854c"/>
+            <path d="M168 4h14v16h-14z" fill="#a19d96"/>
+            <path d="M172 4v16M177 4v16" stroke="#77736d" stroke-width="1.2"/>
+            <path d="M182 4h10a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4h-10z" fill="#c9837a"/>
+            <path d="M28 4 4 12l24 8z" fill="#e6cfa6"/>
+            <path d="M11 9.7 4 12l7 2.3z" fill="#2a2724"/>
+        </symbol>
+    </svg>
+    <div class="progress" aria-hidden="true"></div>
+    <header class="site-header">
+        <a href="index.html" class="logo">Vignesh<em>Arts</em></a>
         <nav>
             <a href="#portfolio">Art's</a>
             <a href="gallery.html">Gallery</a>
@@ -21,61 +37,81 @@
     </header>
 
     <main>
-        <section id="portfolio" class="slider-section fade-in">
-            <div class="slider-container">
-                <div class="slider-wrapper" id="sliderWrapper">
-                    <!-- Images go here -->
-                    <div class="slide"><img src="assets/mr_un_vi_14041226_170726831.jpg.jpeg"></div>
-                    <div class="slide"><img src="assets/mr_un_vi_14041226_170733646.jpg.jpeg"></div>
-                    <div class="slide"><img src="assets/mr_un_vi_14041226_170751697.jpg.jpeg"></div>
-                    <div class="slide"><img src="assets/mr_un_vi_14041226_170822749.jpg.jpeg"></div>
-                    <div class="slide"><img src="assets/mr_un_vi_14041226_170829774.jpg.jpeg"></div>
-                    <div class="slide"><img src="assets/mr_un_vi_14041226_183901251.jpg.jpeg"></div>
-                    <div class="slide"><img src="assets/IMG-20260316-WA0030.jpg.jpeg"></div>
-                    <div class="slide"><img src="assets/IMG-20260316-WA0032.jpg.jpeg"></div>
-                    <div class="slide"><img src="assets/IMG_20260316_190132.jpg.jpeg"></div>
-                </div>
-                <!-- Navigation Arrows -->
-                <button class="slider-btn prev-btn" id="prevBtn" aria-label="Previous">&larr;</button>
-                <button class="slider-btn next-btn" id="nextBtn" aria-label="Next">&rarr;</button>
+        <section class="hero">
+            <svg class="pencil" viewBox="0 0 200 24" style="--top:16%;--left:12%;--rot:-32deg;--w:200px;--dur:6s;--delay:0s" data-speed="0.25" aria-hidden="true"><use href="#pencil"/></svg>
+            <svg class="pencil" viewBox="0 0 200 24" style="--top:70%;--left:78%;--rot:22deg;--w:240px;--dur:7s;--delay:-2s" data-speed="0.35" aria-hidden="true"><use href="#pencil"/></svg>
+            <svg class="pencil" viewBox="0 0 200 24" style="--top:22%;--left:84%;--rot:148deg;--w:150px;--dur:5s;--delay:-1s" data-speed="0.15" aria-hidden="true"><use href="#pencil"/></svg>
+            <svg class="pencil" viewBox="0 0 200 24" style="--top:78%;--left:6%;--rot:70deg;--w:130px;--dur:6.5s;--delay:-3s" data-speed="0.3" aria-hidden="true"><use href="#pencil"/></svg>
+            <div class="hero-title">
+                <h1 class="hero-name" aria-label="VigneshArts"><span style="--i:0">V</span><span style="--i:1">i</span><span style="--i:2">g</span><span style="--i:3">n</span><span style="--i:4">e</span><span style="--i:5">s</span><span style="--i:6">h</span><em><span style="--i:7">A</span><span style="--i:8">r</span><span style="--i:9">t</span><span style="--i:10">s</span></em></h1>
+                <svg class="hero-line" viewBox="0 0 600 24" aria-hidden="true"><path d="M4 16C120 6 260 20 420 10S560 8 596 12" pathLength="1"/></svg>
             </div>
-            <!-- Slider Indicators (Dots) -->
-            <div class="slider-indicators" id="indicators"></div>
-
-            <div class="view-gallery-btn-container fade-in">
-                <a href="gallery.html" class="view-gallery-btn">View Full Gallery</a>
-            </div>
+            <p class="hero-sub">Pencil sketches &amp; portraiture</p>
+            <p class="hero-handle">@mr_un_vi</p>
+            <div class="hero-scroll" aria-hidden="true"><i></i></div>
         </section>
 
-        <section id="about" class="bio-section fade-in">
-            <div class="bio-container">
-                <div class="portrait-wrapper">
-                    <img src="assets/WhatsApp Image 2026-03-16 at 6.59.22 PM.jpeg" alt="Artist Portrait"
-                        class="artist-portrait">
-                </div>
-                <h1 class="artist-name">Vignesh</h1>
-                <p class="artist-handle">@mr_un_vi</p>
-                <p class="artist-bio">
+        <section id="portfolio" class="works">
+            <svg class="pencil" viewBox="0 0 200 24" style="--top:2%;--left:70%;--rot:-18deg;--w:210px;--dur:7s;--delay:0s" data-speed="0.2" aria-hidden="true"><use href="#pencil"/></svg>
+            <div class="g-head">
+                <p class="label" data-scrub="slide-l">Art's</p>
+                <h2 class="g-title" data-scrub="letters"><em>Art's</em></h2>
+            </div>
+            <div class="g-grid">
+                <figure class="g-item tile"><img src="assets/mr_un_vi_14041226_170726831.jpg.jpeg" alt="Artwork 1" width="1080" height="1350" data-lb></figure>
+                <figure class="g-item tile"><img src="assets/mr_un_vi_14041226_170733646.jpg.jpeg" alt="Artwork 2" width="1080" height="1018" data-lb></figure>
+                <figure class="g-item tile"><img src="assets/mr_un_vi_14041226_170751697.jpg.jpeg" alt="Artwork 3" width="1080" height="1306" data-lb></figure>
+                <figure class="g-item tile"><img src="assets/mr_un_vi_14041226_170822749.jpg.jpeg" alt="Artwork 4" width="1080" height="1350" data-lb></figure>
+                <figure class="g-item tile"><img src="assets/mr_un_vi_14041226_170829774.jpg.jpeg" alt="Artwork 5" width="1080" height="1350" data-lb loading="lazy"></figure>
+                <figure class="g-item tile"><img src="assets/mr_un_vi_14041226_183901251.jpg.jpeg" alt="Artwork 6" width="1080" height="1350" data-lb loading="lazy"></figure>
+                <figure class="g-item tile"><img src="assets/IMG-20260316-WA0030.jpg.jpeg" alt="Artwork 7" width="1091" height="1280" data-lb loading="lazy"></figure>
+                <figure class="g-item tile"><img src="assets/IMG-20260316-WA0032.jpg.jpeg" alt="Artwork 8" width="1200" height="1394" data-lb loading="lazy"></figure>
+                <figure class="g-item tile"><img src="assets/IMG_20260316_190132-web.jpg" alt="Artwork 9" width="1800" height="2400" data-lb loading="lazy"></figure>
+                <figure class="g-item tile"><img src="assets/new-1.jpg" alt="Artwork 10" width="1800" height="2400" data-lb loading="lazy"></figure>
+                <figure class="g-item tile"><img src="assets/new-2.jpg" alt="Artwork 11" width="1800" height="2400" data-lb loading="lazy"></figure>
+                <figure class="g-item tile"><img src="assets/new-3.jpg" alt="Artwork 12" width="1800" height="2400" data-lb loading="lazy"></figure>
+                <figure class="g-item tile"><img src="assets/new-4.jpg" alt="Artwork 13" width="2400" height="1800" data-lb loading="lazy"></figure>
+                <figure class="g-item tile"><img src="assets/new-5.jpg" alt="Artwork 14" width="1800" height="2400" data-lb loading="lazy"></figure>
+                <figure class="g-item tile"><img src="assets/new-6.jpg" alt="Artwork 15" width="1800" height="2400" data-lb loading="lazy"></figure>
+                <figure class="g-item tile"><img src="assets/new-7.jpg" alt="Artwork 16" width="1800" height="2400" data-lb loading="lazy"></figure>
+                <figure class="g-item tile"><img src="assets/new-8.jpg" alt="Artwork 17" width="1800" height="2400" data-lb loading="lazy"></figure>
+                <figure class="g-item tile"><img src="assets/new-9.jpg" alt="Artwork 18" width="1800" height="2400" data-lb loading="lazy"></figure>
+                <figure class="g-item tile"><img src="assets/new-10.jpg" alt="Artwork 19" width="1800" height="2400" data-lb loading="lazy"></figure>
+            </div>
+            <div class="works-more" data-scrub="up"><a href="gallery.html" class="btn">View Full Gallery</a></div>
+        </section>
+
+        <section id="about" class="about">
+            <svg class="pencil" viewBox="0 0 200 24" style="--top:6%;--left:88%;--rot:120deg;--w:170px;--dur:6s;--delay:0s" data-speed="0.25" aria-hidden="true"><use href="#pencil"/></svg>
+            <div class="about-portrait" data-scrub="photo">
+                <img src="assets/WhatsApp Image 2026-03-16 at 6.59.22 PM.jpeg" alt="Artist Portrait" width="1440" height="1440" loading="lazy">
+            </div>
+            <div class="about-text" data-scrub="drift-r">
+                <p class="label">About</p>
+                <h2 class="about-name" data-scrub="letters">Vignesh</h2>
+                <p class="about-handle" data-scrub="up">@mr_un_vi</p>
+                <p class="about-bio" data-scrub="words">
                     A passionate artist specializing in highly detailed pencil sketches and portraiture.
                     Blending pop culture icons with fine art shading techniques to create striking, expressive artwork.
                 </p>
-                <a href="#contact" class="contact-btn">Get in Touch</a>
+                <a href="#contact" class="btn" data-scrub="up">Get in Touch</a>
             </div>
         </section>
-        <section id="contact" class="contact-section fade-in">
-            <div class="contact-container">
-                <h2>Get In Touch</h2>
-                <p>Interested in my artwork or commissions? Send me a message!</p>
-                <div class="contact-links">
-                    <a href="mailto:vacharya2006@gmail.com" class="contact-link">Email Me</a>
-                    <a href="https://instagram.com/mr_un_vi" target="_blank" class="contact-link">Instagram</a>
-                </div>
+
+        <section id="contact" class="contact">
+            <svg class="pencil" viewBox="0 0 200 24" style="--top:6%;--left:8%;--rot:-25deg;--w:190px;--dur:6.5s;--delay:0s" data-speed="0.3" aria-hidden="true"><use href="#pencil"/></svg>
+            <svg class="pencil" viewBox="0 0 200 24" style="--top:62%;--left:86%;--rot:205deg;--w:170px;--dur:5.5s;--delay:-2s" data-speed="0.2" aria-hidden="true"><use href="#pencil"/></svg>
+            <h2 class="contact-title" data-scrub="letters">Get In <em>Touch</em></h2>
+            <p data-scrub="words">Interested in my artwork or commissions? Send me a message!</p>
+            <div class="contact-links" data-scrub="up">
+                <a href="mailto:vacharya2006@gmail.com">Email Me</a>
+                <a href="https://instagram.com/mr_un_vi" target="_blank" rel="noopener">Instagram</a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Vignesh. All rights reserved.</p>
+        <p>&copy; 2026 VigneshArts. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
